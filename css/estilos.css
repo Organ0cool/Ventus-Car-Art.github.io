@@ -1,13 +1,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     margin: 0;
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: #090525;
+    color: #ffffff;
     line-height: 1.6;
 }
 
 header {
-    background-color: #3a3a3a;
+    background-color: #090525;;
     color: white;
     padding: 15px 40px;
     display: flex;
@@ -15,6 +15,7 @@ header {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 header .logo {
     font-size: 24px;
@@ -44,19 +45,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #b3a9a9;
-}
-
-.auth-buttons .btn {
-    background-color: #555;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-    margin-left: 10px;
 }
 
 .auth-buttons .btn:hover {

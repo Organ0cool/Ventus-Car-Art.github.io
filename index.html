@@ -1,100 +1,129 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vetus Car Art</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/Favicon88.png" type="image/png">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-
-    <header>
-        <a href="index.html" class="logo">Ventus Car Art</a>
+    
+    <header class="retro-header">
+        <img src="../img/Favicon88" alt="VCArt logo" class="logo"></im>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="galeria.html">Autos</a></li>
-                <li class="auth-buttons">
-                    <a href="#" class="btn">Registro</a>
-                    <a href="#" class="btn">Iniciar Sesión</a>
-                </li>
+            <ul class="retro-menu">                
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./colecciones.html">Colecciones</a></li>
+                <li><a href="./historia.html">historia</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
+    <form class="buscador">
+            <input type="text" placeholder="Buscar auto">
+            <button type="submit">Buscar</button>
+        </form>
     </header>
+    
+    <div>
+        <nav>
+            <ul class="sub-hea">
+                <li><a href>Autos americanos</a></li>
+                <li><a href>Autos europeos</a></li>
+                <li><a href>Autos japoneses</a></li>
+                <li><a href>Muscle cars</a></li>
+                <li><a href>Clásicos deportivos</a></li>
+                <li><a href>Vintage</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+
+    <main class="hero">
+        <section id="pagina-principal">
+            <div class="texto-principal">
+                <h2>Vetus Car Art</h2>
+            <p>Bienvenido a Vetus Car Art, donde la pasión por los automóviles se encuentra con el arte. Nuestra galería presenta una cuidada selección de obras que celebran la belleza y la ingeniería de los coches.</p>
+            </div> 
+            <img src="img/jojojo.jpg" alt="auto-clásico">
+        </section>
+    </main>
+</body>
 
     <div class="galeria-page-container">
-        <h1>Nuestra Colección de Autos Clásicos</h1>
+        <h1 class="titulo-galeria">Nuestra colección de Autos Clásicos</h1>
         <div class="galeria-grid">
             <div class="card">
-                <img src="./img/Mercedes Benz 540K/Mercedes Benz 540K.jpg" alt="Mercedes-Benz 540K">
-                <h2>Mercedes Benz 540K (1936 1940)  Alemania</h2>
+                <img src="./img/Mercedes Benz 540K.jpg" alt="Mercedes-Benz 540K" class="img-tarjetas">
+                <h2 class="tarjetas">Mercedes Benz 540K (1936 1940)  Alemania</h2>
                 <p>Diseño majestuoso con motor sobrealimentado. Considerado uno de los autos más bellos del período preguerra.</p>
-                <a href="./index_autos/mercedes benz 540k.html" class="btn">Leer más</a>
+                <a href="mercedes benz 540k.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Packard Twelve (1933 1939)/Packard Twelve (1933 1939).png" alt="Packard Twelve">
-                <h2>Packard Twelve (1933 1939)  EE. UU.</h2>
+                <img src="./img/Packard Twelve (1933 1939).png" alt="Packard Twelve" class="img-tarjetas">
+                <h2 class="tarjetas">Packard Twelve (1933 1939)  EE. UU.</h2>
                 <p>Competidor directo de Rolls Royce y Cadillac en lujo. Motor V12 y detalles interiores de alta calidad.</p>
-                <a href="./index_autos/packard twelve.html" class="btn">Leer más</a>
+                <a href="packard twelve.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Volkswagen Beetle (Escarabajo)/Volkswagen Beetle (Escarabajo).jpg" alt="Volkswagen Beetle">
-                <h2>Volkswagen Beetle (Escarabajo)  Alemania</h2>
+                <img src="./img/Volkswagen Beetle (Escarabajo).jpg" alt="Volkswagen Beetle" class="img-tarjetas">
+                <h2 class="tarjetas">Volkswagen Beetle (Escarabajo)  Alemania</h2>
                 <p>Año de inicio: 1938. Uno de los autos más vendidos de la historia. Símbolo de la posguerra y la cultura hippie.</p>
-                <a href="./index_autos/volkswagen beetle.html" class="btn">Leer más</a>
+                <a href="volkswagen beetle.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Ford Mustang (Primera generación)/Ford Mustang (Primera generación).jpg" alt="Ford Mustang">
-                <h2>Ford Mustang (Primera generación)  EE. UU.</h2>
+                <img src="./img/Ford Mustang (Primera generación).jpg" alt="Ford Mustang" class="img-tarjetas">
+                <h2 class="tarjetas">Ford Mustang (Primera generación)  EE. UU.</h2>
                 <p>Año: 1964. Ícono del "muscle car" americano. Atractivo, potente y asequible en su época.</p>
-                <a href="./index_autos/ford mustang.html" class="btn">Leer más</a>
+                <a href="ford mustang.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Rolls Royce Phantom I, II y III (1925 1939)/Rolls Royce Phantom I, II y III (1925 1939).png" alt="Rolls-Royce Phantom">
-                <h2>Rolls Royce Phantom I, II y III (1925 1939)  Reino Unido</h2>
+                <img src="./img/Rolls Royce Phantom I, II y III (1925 1939).png" alt="Rolls Royce Phantom" class="img-tarjetas">
+                <h2 class="tarjetas">Rolls Royce Phantom I, II y III (1925-1939)  Reino Unido</h2>
                 <p>Auténtico símbolo de realeza y alta sociedad. Construcción artesanal con materiales nobles. Extremadamente silencioso y cómodo para la época.</p>
-                <a href="./index_autos/rolls royce phantom.html" class="btn">Leer más</a>
+                <a href="rolls royce phantom.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Mini Cooper Clasico/Mini Cooper Clasico.jpg" alt="Mini Cooper Clasico">
-                <h2>Mini Cooper clásico (1959)  Reino Unido</h2>
+                <img src="./img/Mini Cooper Clasico.jpg" alt="Mini Cooper Clasico" class="img-tarjetas">
+                <h2 class="tarjetas">Mini Cooper clásico (1959)  Reino Unido</h2>
                 <p>Compacto, ágil y revolucionario en diseño urbano. Amado por jóvenes y pilotos de rally por igual.</p>
-                <a href="./index_autos/Mini Cooper Clasico.html" class="btn">Leer más</a>
+                <a href="mini cooper clasico.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Fiat 600/Fiat 600.jpg" alt="Fiat 600">
-                <h2>Fiat 600 (1955)  Italia</h2>
+                <img src="./img/Fiat 600.jpg" alt="Fiat 600" class="img-tarjetas">
+                <h2 class="tarjetas">Fiat 600 (1955)  Italia</h2>
                 <p>Pequeño, económico y muy popular en Europa y América Latina. Motorizó a familias de clase media durante décadas.</p>
-                <a href="./index_autos/Fiat 600.html" class="btn">Leer más</a>
+                <a href="fiat 600.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Porsche 356/Porsche 356.jpg" alt="Porsche 356">
-                <h2>Porsche 356 (1948)  Alemania</h2>
+                <img src="./img/Porsche 356.jpg" alt="Porsche 356" class="img-tarjetas">
+                <h2 class="tarjetas">Porsche 356 (1948)  Alemania</h2>
                 <p>Primer modelo de Porsche, con líneas deportivas y alma ligera. Muy buscado por coleccionistas.</p>
-                <a href="./index_autos/Porsche 356.html" class="btn">Leer más</a>
+                <a href="porsche 356.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Bentley S1 y S2/Bentley S1 y S2.jpg" alt="Bentley S1 y S2">
-                <h2>Bentley S1 y S2 (1955 al 1962)  Reino Unido</h2>
+                <img src="./img/Bentley S1 y S2.jpg" alt="Bentley S1 y S2" class="img-tarjetas">
+                <h2 class="tarjetas">Bentley S1 y S2 (1955 al 1962): Reino unido</h2>
                 <p>Elegancia clásica con lujo inglés discreto. Confort absoluto e ideal para caballeros refinados.</p>
-                <a href="./index_autos/Bentley S1 y S2.html" class="btn">Leer más</a>
+                <a href="Bentley S1 y S2.html" class="btn">Leer más</a>
             </div>
 
             <div class="card">
-                <img src="./img/Chrysler Imperial Crown/Chrysler Imperial Crown.png" alt="Chrysler Imperial Crown">
-                <h2>Chrysler Imperial Crown (1950s al 60s)  EE. UU.</h2>
+                <img src="./img/Chrysler Imperial Crown.png" alt="Chrysler Imperial Crown" class="img-tarjetas">
+                <h2 class="tarjetas">Chrysler Imperial Crown (1950s al 60s)  EE. UU.</h2>
                 <p>Competía directamente con Cadillac y Lincoln. Diseño futurista con detalles art déco.</p>
-                <a href="./index_autos/Chrysler Imperial Crown.html" class="btn">Leer más</a>
+                <a href="Chrysler Imperial Crown.html" class="btn">Leer más</a>
             </div>
         </div>
     </div>

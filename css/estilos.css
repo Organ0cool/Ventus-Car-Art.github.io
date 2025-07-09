@@ -162,7 +162,6 @@ section h1, section h2 {
 }
 
 .hero{
-    background-image: url('../img/p_principal/rojored.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

@@ -293,4 +293,34 @@ footer {
 
 .imagen-grande:target {
   display: flex;
+  
+}
+.galeria-imagenes h2 {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 15px 0;
+    font-size: 1.8em;
+    color: #3a3a3a;
+    border-bottom: 2px solid #3a3a3a;
+    padding-bottom: 5px;
+}
+
+.galeria-seccion {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.galeria-seccion img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.galeria-seccion img:hover {
+    transform: scale(1.05);
 }

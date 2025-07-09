@@ -1,10 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #111;
@@ -18,8 +12,6 @@ html, body{
     height: 100%;
     overflow-x: hidden;
 }
-
-/* header principal */
 
 .retro-header{
     background: linear-gradient(
@@ -41,7 +33,7 @@ html, body{
 }
 
 .logo{
-    height: 50px;
+    height: 70px;
     cursor: pointer;
 }
 
@@ -101,7 +93,6 @@ html, body{
     background-color: #7b3fcc;
 }
 
-/* navegador secundario */
 
 .sub-header{
     background: linear-gradient(
@@ -170,8 +161,6 @@ section h1, section h2 {
     color: #f3e5f5;
 }
 
-/* mainhero con imagen */
-
 .hero{
     background-image: url('../img/p_principal/rojored.jpg');
     background-size: cover;
@@ -190,7 +179,7 @@ section h1, section h2 {
 }
 
 .hero img{
-    max-width: 1000%;
+    max-width: 900%;
     height: auto;
     display: block;
 }
@@ -231,8 +220,6 @@ section h1, section h2 {
     text-shadow: 1px 1px 3px #000;
 }
 
-/* título coleción */
-
 .titulo-galeria{
     max-width: 1200px;
     margin: 40px auto 15px auto;
@@ -245,10 +232,6 @@ section h1, section h2 {
     font-size: medium;
     margin: 15px auto 45px auto;
 }
-
-
-
-/* galería tarjetas efecto vidrio */
 
 .galeria-page-container{
     max-width: 1200px;
@@ -263,7 +246,6 @@ section h1, section h2 {
 
 }
 
-/* efecto vidrioso */
 
 .card{
     background-color: rgba(255, 255, 255, 0.1);
@@ -316,7 +298,6 @@ section h1, section h2 {
     background-color: #7b3fcc;
 }
 
-/* footer */
 
 footer{
     text-align: center;
@@ -325,8 +306,6 @@ footer{
     color: #666;
     font-size: 0.9rem;
 }
-
-/* para suavisar el scroll */
 
 body::-webkit-scrollbar{
     width: 4px;

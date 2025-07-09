@@ -24,12 +24,13 @@ html, body{
     line-height: 1.6;
 }
 
-.header-container{
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 200px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -61,7 +62,6 @@ html, body{
 
 .buscador{
     display: flex;
-    margin-left: auto;
     gap: 3px;
     padding: inline-block;
 
@@ -178,10 +178,11 @@ section h1, section h2 {
     background-position: center bottom;
 }
 
-.hero img{
-    max-width: 800%;
-    height: center;
+.hero img {
+    max-width: 100%;
+    height: auto;
     display: block;
+    object-fit: cover;
 }
 
 

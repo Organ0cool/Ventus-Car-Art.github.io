@@ -30,7 +30,8 @@ html, body{
     justify-content: space-between;
     width: 100%;
     gap: 30px;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo{
@@ -63,6 +64,7 @@ html, body{
 .buscador {
     display: flex;
     gap: 5px;
+    margin-left: 0;
 }
 
 .buscador input[type="text"]{
@@ -369,4 +371,12 @@ html{
     max-width: 90%;
     height: auto;
     margin-bottom: 20px;
+}
+
+body {
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #eee;
+    max-width: 1400px;
+    margin: 0 auto;
 }

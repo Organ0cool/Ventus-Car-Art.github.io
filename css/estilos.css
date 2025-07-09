@@ -60,11 +60,9 @@ html, body{
     color: #a362ff;
 }
 
-.buscador{
+.buscador {
     display: flex;
-    gap: 3px;
-    padding: inline-block;
-
+    gap: 5px;
 }
 
 .buscador input[type="text"]{
@@ -166,8 +164,8 @@ section h1, section h2 {
     background-position: center center;
     background-repeat: no-repeat;
 
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
 
     position: center;
     display: flex;

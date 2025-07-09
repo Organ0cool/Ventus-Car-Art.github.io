@@ -1,69 +1,13 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  margin: 0;
-  background-color: var(--bg-day);
-  color: var(--txt-day);
-  line-height: 1.6;
-  background-image: url('../img/fondo.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-body.dark-mode {
-  --bg-day: #090525;
-  --txt-day: #ffffff;
-}
-
-button {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  padding: 8px 12px;
-  background: rgba(0,0,0,0.3);
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.galeria-imagenes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-  padding: 16px;
-}
-
-.galeria-imagenes img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.galeria-imagenes img:hover {
-  transform: scale(1.05);
-}
-
-.boton-centro {
-  text-align: center;
-  margin: 16px 0;
-}
-
-.back-button {
-  padding: 10px 20px;
-  background: #090525;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    background-color: #e0e0e0;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color:rgb(98, 97, 107);;
+    background-color: #3a3a3a;
     color: white;
     padding: 15px 40px;
     display: flex;
@@ -71,7 +15,6 @@ header {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 header .logo {
     font-size: 24px;
@@ -101,6 +44,19 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #b3a9a9;
+}
+
+.auth-buttons .btn {
+    background-color: #555;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
 }
 
 .auth-buttons .btn:hover {
@@ -246,7 +202,7 @@ section h1, section h2 {
 .car-detail-container {
     max-width: 900px;
     margin: 40px auto; 
-    background-color: #000000;
+    background-color: #f9f9f9;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

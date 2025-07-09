@@ -28,10 +28,10 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -67,26 +67,12 @@ html, body{
     margin-left: 0;
 }
 
-.buscador input[type="text"]{
-    padding: 6px 12px;
-    border: none;
-    background-color: #a362ff;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+.buscador input[type="text"] {
+    width: 150px;
 }
 
-.buscador button{
-    padding: 6px 12px;
-    border: none;
-    background-color: #a362ff;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+.buscador button {
+    width: auto;
 }
 
 .buscador button:hover{
@@ -373,10 +359,6 @@ html{
     margin-bottom: 20px;
 }
 
-body {
-    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #111;
-    color: #eee;
-    max-width: 1400px;
-    margin: 0 auto;
+body, html {
+    overflow-x: hidden;
 }

@@ -33,7 +33,7 @@ html, body{
 }
 
 .logo{
-    height: 70px;
+    height: 80px;
     cursor: pointer;
 }
 
@@ -180,7 +180,7 @@ section h1, section h2 {
 
 .hero img{
     max-width: 900%;
-    height: auto;
+    height: center;
     display: block;
 }
 

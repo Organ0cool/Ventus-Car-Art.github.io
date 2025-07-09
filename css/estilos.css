@@ -1,42 +1,129 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #eee;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* header principal */
+
+.retro-header{
+    background: linear-gradient(
+        90deg, #000000, #111111
+    );
+    width: 100vw;
+    padding: 15px 30px;
     background-color: #e0e0e0;
     color: #333;
     line-height: 1.6;
 }
 
-header {
-    background-color: #3a3a3a;
-    color: white;
-    padding: 15px 40px;
+.header-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    width: 100%;
+    gap: 200px;
 }
 
-header .logo {
+.logo{
+    height: 50px;
+    cursor: pointer;
+}
+
+.retro-menu{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.retro-menu li a{
     font-size: 24px;
     font-weight: bold;
     color: white;
     text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-nav ul {
+.retro-menu li a:hover{
+    color: #a362ff;
+}
+
+.buscador{
+    display: flex;
+    margin-left: auto;
+    gap: 3px;
+    padding: inline-block;
+
+}
+
+.buscador input[type="text"]{
+    padding: 6px 12px;
+    border: none;
+    background-color: #a362ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.buscador button{
+    padding: 6px 12px;
+    border: none;
+    background-color: #a362ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.buscador button:hover{
+    background-color: #7b3fcc;
+}
+
+/* navegador secundario */
+
+.sub-header{
+    background: linear-gradient(
+        90deg, #2b1e4a, #0b0d22
+    );
+    padding: 12px 0;
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    box-shadow: inset 0 -3px 6px rgba(0,0,0,0.5);
+}
+
+.sub-hea{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
 }
 
-nav ul li {
-    margin-left: 30px;
-}
-
-nav ul li a {
-    color: white;
+.sub-hea li a{
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -75,226 +162,199 @@ section h1, section h2 {
 
 #hero {
     background: url('https://placehold.co/1500x600/555555/FFFFFF?text=Tu+Auto+Clásico+Aquí') no-repeat center center/cover;
-    color: white;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    text-transform: capitalize;
 }
 
-#hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.sub-hea li a:hover{
+    color: #f3e5f5;
 }
 
-#hero p {
-    font-size: 20px;
-    max-width: 800px;
-}
+/* mainhero con imagen */
 
-.hero-btn {
-    background-color: #b3a9a9;
-    color: #3a3a3a;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 30px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
+.hero{
+    background-image: url('../img/p_principal/rojored.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
-.hero-btn:hover {
-    background-color: #d1c8c8;
-    transform: translateY(-2px);
-}
-
-#galeria-highlight {
-    background-color: #f4f4f4;
-}
-
-#galeria-highlight .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-#nosotros {
-    background-color: #e0e0e0;
-    padding: 80px 40px;
-}
-
-#nosotros p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 16px;
-}
-
-.card {
-    background-color: #a19595;
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    text-align: left;
-}
-
-.card img {
     width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    height: 100%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-position: center bottom;
 }
 
-.card h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-}
-.card h2 a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.hero img{
+    max-width: 1000%;
+    height: auto;
+    display: block;
 }
 
-.card h2 a:hover {
-    color: #007BFF;
-}
-.card p {
-    font-size: 14px;
-    color: #222;
-    margin-bottom: 20px;
-    text-align: justify;
-}
 
-.card .btn {
-    background-color: #3a3a3a;
+
+.texto-principal{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
     color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 14px;
-    display: inline-block;
-}
-
-.card .btn:hover {
-    background-color: #555;
-}
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-.galeria-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-.car-detail-container {
-    max-width: 900px;
-    margin: 40px auto; 
-    background-color: #f9f9f9;
+    text-align: left;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center;
 }
 
-footer {
-    background-color: #3a3a3a;
-    color: white;
-    text-align: center;
-    padding: 30px 40px;
-    font-size: 14px;
-    margin-top: 40px;
+.texto-principal h2{
+    font-size: 90px;
+    font-family: "DM Serif Text", serif;
 }
-.galeria-auto {
+
+.texto-principal p{
+    font-size: 20px;
+    font-family: "Cormorant", serif;
+}
+
+.hero-content h1{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 900;
+    text-shadow: 2px 2px 6px #000;
+}
+
+.hero-content p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* título coleción */
+
+.titulo-galeria{
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 40px auto 15px auto;
+    text-align: center;
+    color: #eee;
+}
+
+.galeria-page-container p{
+    text-align: center;
+    font-size: medium;
+    margin: 15px auto 45px auto;
+}
+
+
+
+/* galería tarjetas efecto vidrio */
+
+.galeria-page-container{
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+.galeria-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+
+}
+
+/* efecto vidrioso */
+
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
     padding: 20px;
+    color: #eee;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease;
 }
 
-.galeria-auto h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2em;
+.card:hover{
+    transform: translateY(-10px);
 }
 
-.galeria-imagenes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.galeria-imagenes img {
-    width: 300px;
-    height: auto;
+.img-tarjetas{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
     object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    height: 180px;
 }
 
-.galeria-imagenes img:hover {
-    transform: scale(1.05);
-}
-.boton-centro {
-    text-align: center;
-    margin: 30px 0;
+.tarjetas{
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color:#ddd;
 }
 
-.back-button {
+.card p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color:#ddd;
+}
+
+.btn{
     display: inline-block;
-    color: #616263;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: 2px solid #615869;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.back-button:hover {
-    background-color: #747677;
+    padding: 8px 16px;
+    background-color: #a362ff;
     color: white;
-}
-.imagen-grande {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-.imagen-grande img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
+.btn:hover{
+    background-color: #7b3fcc;
 }
 
-.imagen-grande:target {
-  display: flex;
+/* footer */
 
+footer{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #111;
+    color: #666;
+    font-size: 0.9rem;
 }
+
+/* para suavisar el scroll */
+
+body::-webkit-scrollbar{
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: border-box;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.imagen:target {
+    display: flex;
+}
+
 .galeria-imagenes h2 {
     width: 100%;
     text-align: center;
@@ -305,13 +365,13 @@ footer {
     padding-bottom: 5px;
 }
 
-.galeria-seccion {
+.galeria-grid {
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
 }
 
-.galeria-seccion img {
+.galeria-grid img {
     width: 300px;
     height: auto;
     object-fit: cover;

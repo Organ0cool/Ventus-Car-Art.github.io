@@ -320,31 +320,3 @@ footer {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
 }
-
-.galeria-seccion img:hover {
-    transform: scale(1.05);
-}
-
-.imagen-grande {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  text-align: center;
-}
-
-.imagen-grande img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
-}
-
-.imagen-grande:target {
-  display: flex;
-}

@@ -25,12 +25,12 @@ html, body{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100; /* asegura que quede encima de otros elementos */
-    background: #222; /* o el color/fondo que uses */
+    z-index: 100;
+    background: #222; 
 }
 
 .hero {
-    margin-top: 150px; /* ajusta según la altura de tu header */
+    margin-top: 150px; 
 }
 
 .header-container {

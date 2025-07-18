@@ -258,9 +258,14 @@ section h1, section h2 {
     transform: translateY(-10px);
 }
 
-.card:hover .tarjetas {
-    color: #c0b283; /* cambia solo el título a un dorado sobrio */
+.card a {
+    color: #eee;
+    text-decoration: none;
     transition: color 0.3s ease;
+}
+
+.card:hover a {
+    color: #c0b283;
 }
 
 .img-tarjetas{

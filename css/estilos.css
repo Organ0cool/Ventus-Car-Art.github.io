@@ -68,7 +68,7 @@ html, body{
 }
 
 .retro-menu li a:hover{
-    color: #a362ff;
+    color: #7f7f80;
 }
 
 .buscador {
@@ -98,7 +98,7 @@ html, body{
 
 .sub-header{
     background: linear-gradient(
-        90deg, #2b1e4a, #0b0d22
+        90deg, #514d5c, #0b0d22
     );
     padding: 12px 0;
     text-align: center;
@@ -242,20 +242,25 @@ section h1, section h2 {
     padding: 20px;
 }
 
-.card{
+.card {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 20px;
-    color: #eee;
+    color: #eee; /* color de texto base */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(175, 129, 1, 0.18);
     transition: transform 0.3s ease;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-10px);
+}
+
+.card:hover .tarjetas {
+    color: #c0b283; /* cambia solo el título a un dorado sobrio */
+    transition: color 0.3s ease;
 }
 
 .img-tarjetas{
@@ -281,7 +286,7 @@ section h1, section h2 {
 .btn{
     display: inline-block;
     padding: 8px 16px;
-    background-color: #a362ff;
+    background-color: #c08d01;
     color: white;
     border-radius: 8px;
     text-decoration: none;
@@ -290,7 +295,7 @@ section h1, section h2 {
 }
 
 .btn:hover{
-    background-color: #7b3fcc;
+    background-color: #f7c05a;
 }
 
 

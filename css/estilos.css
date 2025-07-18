@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
 
 body{
     font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -137,11 +144,6 @@ section h1, section h2 {
     margin-bottom: 20px;
 }
 
-#hero {
-    background: url('https://placehold.co/1500x600/555555/FFFFFF?text=Tu+Auto+Clásico+Aquí') no-repeat center center/cover;
-    font-size: 1rem;
-    text-transform: capitalize;
-}
 
 .sub-hea li a:hover{
     color: #f3e5f5;
@@ -351,9 +353,9 @@ footer{
     min-height: 80vh;  
     text-align: center; 
     margin: auto;
-    text-align: center;        /* centra el texto horizontalmente */
-    max-width: 800px;          /* ancho máximo del párrafo */
-    margin: 0 auto;            /* centra el bloque en la página */
+    text-align: center;     
+    max-width: 800px;    
+    margin: 0 auto;       
     line-height: 1.5;
 }
 
@@ -443,22 +445,22 @@ footer{
 
 .boton-centro {
     display: flex;
-    justify-content: center; /* centra horizontalmente */
-    margin: 2rem 0; /* espacio arriba y abajo */
+    justify-content: center; 
+    margin: 2rem 0;
 }
 
 .back-button {
-    background-color: #333; /* color del botón */
-    color: #fff; /* texto blanco */
+    background-color: #333;
+    color: #fff; 
     padding: 12px 24px;
     border-radius: 8px;
-    text-decoration: none; /* sin subrayado */
+    text-decoration: none;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-    background-color: #555; /* efecto hover */
+    background-color: #555; 
 }
 
 .car-history {

@@ -109,4 +109,20 @@
     </footer>
 
 </body>
+<script>
+document.querySelector('.buscador').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const query = e.target.querySelector('input').value.toLowerCase();
+    const tarjetas = document.querySelectorAll('.card');
+    
+    tarjetas.forEach(card => {
+        const titulo = card.querySelector('h2').textContent.toLowerCase();
+        if (titulo.includes(query)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+</script>
 </html>

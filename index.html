@@ -34,22 +34,10 @@
                 <input type="text" placeholder="Buscar auto">
                 <button type="submit">Buscar</button>
             </form>
+
         </div>
     </header>
-    <!--
-    <div class="sub-header">
-        <nav>
-            <ul class="sub-hea">
-                <li><a href="#">Autos americanos</a></li>
-                <li><a href="#">Autos europeos</a></li>
-                <li><a href="#">Autos japoneses</a></li>
-                <li><a href="#">Muscle cars</a></li>
-                <li><a href="#">Clásicos deportivos</a></li>
-                <li><a href="#">Vintage</a></li>
-            </ul>
-        </nav>
-    </div>
- -->
+
     <main class="hero">
         <section class="pagina-principal">
             <img src="./img/p_principal/rojored.jpg" alt="Auto clásico rojo" class="imagen-principal">
@@ -138,4 +126,21 @@
     </footer>
 
 </body>
+<script>
+document.querySelector('.buscador').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    const query = e.target.querySelector('input').value.toLowerCase();
+    const tarjetas = document.querySelectorAll('.card');
+    
+    tarjetas.forEach(card => {
+        const titulo = card.querySelector('h2').textContent.toLowerCase();
+        if (titulo.includes(query)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+</script>
+
 </html>

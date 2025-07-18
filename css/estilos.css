@@ -20,15 +20,17 @@ html, body{
     overflow-x: hidden;
 }
 
-.retro-header{
-    background: linear-gradient(
-        90deg, #000000, #111111
-    );
-    width: 100vw;
-    padding: 15px 30px;
-    background-color: #e0e0e0;
-    color: #333;
-    line-height: 1.6;
+.retro-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* asegura que quede encima de otros elementos */
+    background: #222; /* o el color/fondo que uses */
+}
+
+.hero {
+    margin-top: 150px; /* ajusta según la altura de tu header */
 }
 
 .header-container {
@@ -52,6 +54,7 @@ html, body{
     gap: 25px;
     font-weight: 600;
     margin-right: 10px;
+    margin-top: 80px;
 }
 
 .retro-menu li a{
@@ -70,20 +73,26 @@ html, body{
 
 .buscador {
     display: flex;
-    gap: 5px;
-    margin-left: 0;
+    gap: 8px;
 }
 
 .buscador input[type="text"] {
-    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .buscador button {
-    width: auto;
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.buscador button:hover{
-    background-color: #7b3fcc;
+.buscador button:hover {
+    background-color: #555;
 }
 
 
@@ -153,16 +162,15 @@ section h1, section h2 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
     width: 110%;
     height: 110%;
-
     position: center;
     display: flex;
     align-items: center;
     justify-content: right;
     overflow: hidden;
     background-position: center bottom;
+    margin-top: 80px;
 }
 
 .hero img {
@@ -230,6 +238,8 @@ section h1, section h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-top: 150px;
+    padding: 20px;
 }
 
 .card{
@@ -411,7 +421,7 @@ footer{
     align-items: center;  
     min-height: 80vh;  
     text-align: center; 
-    margin: auto;
+    margin-top: px
 
 }
 .galeria-seccion {

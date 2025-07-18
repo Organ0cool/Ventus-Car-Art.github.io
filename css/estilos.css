@@ -362,3 +362,70 @@ html{
 body, html {
     overflow-x: hidden;
 }
+
+/* 🌙 Botón de Modo Oscuro/Claro */
+.toggle-darkmode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 999;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.toggle-darkmode:hover {
+    background: #fff;
+    color: #111;
+}
+
+/* 🎨 Gradiente Animado */
+body {
+    background: linear-gradient(-45deg, #1a1a1a, #333, #444, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* 🖱️ Hover Effects */
+.retro-menu li a:hover {
+    color: #ff4081;
+    text-shadow: 0 0 10px #ff4081;
+    transform: scale(1.1);
+}
+
+/* ✨ Transiciones suaves */
+* {
+    transition: all 0.3s ease;
+}
+
+/* 🌗 Estilos para el modo claro */
+body.light-mode {
+    background: #f5f5f5;
+    color: #222;
+}
+
+body.light-mode .retro-menu li a {
+    color: #222;
+}
+
+body.light-mode .retro-menu li a:hover {
+    color: #0078ff;
+    text-shadow: 0 0 10px #0078ff;
+}
+
+/* Cambiar fondo en modo claro */
+body.light-mode {
+    background: linear-gradient(-45deg, #ffffff, #eeeeee, #dddddd, #ffffff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}

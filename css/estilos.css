@@ -5,29 +5,31 @@
     text-decoration: none;
     border: none;
 }
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
 body{
     font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #111;
     color: #eee;
 }
 
-.retro-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+html, body{
+    margin: 0;
+    padding: 0;
     width: 100%;
-    z-index: 100;
-    background: #222; 
+    height: 100%;
+    overflow-x: hidden;
 }
 
-.hero {
-    margin-top: 150px; 
+.retro-header {
+    background: linear-gradient(90deg, #000000, #111111);
+    width: 100vw;
+    padding: 15px 30px;
+    background-color: #e0e0e0;
+    color: #333;
+    line-height: 1.6;
+    position: fixed; 
+    top: 0;       
+    left: 0;
+    z-index: 9999;
 }
 
 .header-container {
@@ -150,6 +152,11 @@ section h1, section h2 {
     margin-bottom: 20px;
 }
 
+#hero {
+    background: url('https://placehold.co/1500x600/555555/FFFFFF?text=Tu+Auto+Clásico+Aquí') no-repeat center center/cover;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
 
 .sub-hea li a:hover{
     color: #f3e5f5;
@@ -159,15 +166,16 @@ section h1, section h2 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
     width: 110%;
     height: 110%;
+
     position: center;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     overflow: hidden;
     background-position: center bottom;
-    margin-top: 80px;
 }
 
 .hero img {
@@ -177,25 +185,25 @@ section h1, section h2 {
     object-fit: cover;
 }
 
-
-.texto-principal{
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: left;
-    padding: 30px;
-    border-radius: 10px;
+.texto-principal {
+    position: absolute; 
+    top: 30%;      
+    left: 3%;       
+    transform: translateY(-50%);
+    z-index: 10;    
+    text-align: left;  
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px 30px;
+    border-radius: 12px;
+    max-width: 40%; 
 }
-
 .texto-principal h2{
-    font-size: 90px;
+    font-size: 60px;
     font-family: "DM Serif Text", serif;
 }
 
 .texto-principal p{
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Cormorant", serif;
 }
 
@@ -217,26 +225,6 @@ section h1, section h2 {
     margin: 40px auto 15px auto;
     text-align: center;
     color: #eee;
-}
-
-.galeria-page-container p{
-    text-align: center;
-    font-size: medium;
-    margin: 15px auto 45px auto;
-}
-
-.galeria-page-container{
-    max-width: 1200px;
-    margin: 0 auto 60px auto;
-    padding: 0 20px;
-}
-
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 150px;
-    padding: 20px;
 }
 
 .card {
@@ -345,9 +333,13 @@ footer {
 }
 
 .galeria-grid {
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    margin-top: 150px;
 }
 
 .galeria-grid img {
@@ -383,39 +375,21 @@ footer {
     overflow-x: hidden;
 }
 .pagina-principal {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 160px;
 }
 
 .imagen-principal {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
-}
-
-.texto-principal {
-    position: absolute; 
-    top: 150px; 
-    left: 400px;
-    max-width: 40%;
-    color: #fff;
-    text-align: left;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-.texto-principal h2 {
-    font-size: 3.5rem;
-    margin: 0 0 10px;
-    color: #bbbbbb;
-}
-
-.texto-principal p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin: 0;
-    text-align: justify;
 }
 
 .galeria-auto {
